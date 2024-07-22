@@ -1,7 +1,7 @@
 @use "../util/" as *;
 
-*:not(h2, strong, p) {
-  transition: 1s ease;
+* {
+  transition: 0.65s ease;
 }
 
 body {
@@ -9,18 +9,17 @@ body {
 }
 
 main {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 
 .component {
   background-color: $color-accent-light;
-  box-shadow: 1px 10px 50px -15px $color-text;
-
-  margin: 72px 32px;
   border-radius: 5px;
+  box-shadow: 1px 10px 50px -15px $color-text;
   display: grid;
+  margin: 4.5rem 2rem;
 
   &__section {
     padding: 1.5rem;
@@ -33,6 +32,6 @@ main {
   @include breakpoint(large) {
     border-radius: 8px;
     grid-template-columns: repeat(4, 1fr);
-    margin: 163px 31.5%;
+    margin: 10.188rem 31.2%;
   }
 }

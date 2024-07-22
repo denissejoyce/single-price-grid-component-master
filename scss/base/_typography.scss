@@ -3,13 +3,8 @@
 .component {
   color: $color-primary;
   font-family: $font;
-  font-size: clamp(0.859rem, 0.98vw, 1rem);
+  font-size: clamp(0.859rem, 0.89vw, 0.92rem);
   font-weight: 500;
-}
-
-.highlight--accent {
-  color: $color-accent-dark;
-  font-weight: 800;
 }
 
 .highlight--light {
@@ -19,36 +14,36 @@
 }
 
 .highlight--pricing {
-  font-size: 32px;
+  font-size: clamp(2rem, 2.1vw, 2.2rem);
   font-weight: 700;
 }
 
 .section--intro {
+  .section__highlight {
+    color: $color-accent-dark;
+    font-size: clamp(0.916rem, 0.97vw, 1rem);
+    font-weight: 800;
+  }
   .section__text {
     color: $color-text;
+    font-size: clamp(0.906rem, 0.94vw, 0.97rem);
     line-height: 1.75;
+    opacity: 80%;
   }
 }
 
-.section__highlight {
-  font-size: 14.65px;
-  .section__text {
-    font-size: 14.5px;
-  }
-}
-
-.section__button {
-  font-size: 18px;
+.section__button,
+.section__title {
+  font-size: clamp(1.125rem, 1.15vw, 1.2rem);
 }
 
 .section__title {
   color: $color-primary;
-  font-size: 18px;
 }
 
 .title--cta {
   color: $color-secondary;
-  font-size: clamp(1.234rem, 1.4vw, 1.875rem);
+  font-size: clamp(1.234rem, 1.4vw, 1.8rem);
 }
 
 .section__list {
