@@ -1,0 +1,10 @@
+@use "../util/" as *;
+
+.section--intro {
+  @include toFlex(column, 20px);
+  @include breakpoint(large) {
+    grid-column: 1/5;
+  }
+
+  padding: 10px inherit;
+}

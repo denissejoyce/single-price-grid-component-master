@@ -1,0 +1,17 @@
+@use "../util/" as *;
+
+.section--about {
+  @include toFlex(column, 10px);
+  @include breakpoint(large) {
+    border-radius: 0 0 8px 0;
+    grid-column: 3/5;
+  }
+
+  background-color: $color-accent-blue;
+  border-radius: 0 0 5px 5px;
+}
+
+.section__list {
+  list-style: none;
+  padding: 0;
+}

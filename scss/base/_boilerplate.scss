@@ -1,0 +1,38 @@
+@use "../util/" as *;
+
+*:not(h2, strong, p) {
+  transition: 1s ease;
+}
+
+body {
+  background: $color-primary;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.component {
+  background-color: $color-accent-light;
+  box-shadow: 1px 10px 50px -15px $color-text;
+
+  margin: 72px 32px;
+  border-radius: 5px;
+  display: grid;
+
+  &__section {
+    padding: 1.5rem;
+
+    @include breakpoint(large) {
+      padding: 2.3rem;
+    }
+  }
+
+  @include breakpoint(large) {
+    border-radius: 8px;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 163px 31.5%;
+  }
+}

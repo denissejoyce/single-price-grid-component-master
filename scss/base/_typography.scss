@@ -1,0 +1,56 @@
+@use "../util/" as *;
+
+.component {
+  color: $color-primary;
+  font-family: $font;
+  font-size: clamp(0.859rem, 0.98vw, 1rem);
+  font-weight: 500;
+}
+
+.highlight--accent {
+  color: $color-accent-dark;
+  font-weight: 800;
+}
+
+.highlight--light {
+  color: $color-primary;
+  font-weight: 400;
+  opacity: 60%;
+}
+
+.highlight--pricing {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.section--intro {
+  .section__text {
+    color: $color-text;
+    line-height: 1.75;
+  }
+}
+
+.section__highlight {
+  font-size: 14.65px;
+  .section__text {
+    font-size: 14.5px;
+  }
+}
+
+.section__button {
+  font-size: 18px;
+}
+
+.section__title {
+  color: $color-primary;
+  font-size: 18px;
+}
+
+.title--cta {
+  color: $color-secondary;
+  font-size: clamp(1.234rem, 1.4vw, 1.875rem);
+}
+
+.section__list {
+  font-weight: 300;
+}
