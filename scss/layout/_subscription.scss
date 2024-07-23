@@ -9,6 +9,13 @@
 .button--signup:hover {
   background-color: $color-accent-light;
   color: $color-accent-dark;
+  transform: scale(1.015);
+}
+
+.button--signup:active {
+  background-color: $color-accent-light;
+  color: $color-accent-dark;
+  transform: scale(0.97);
 }
 
 .section--subscription {
